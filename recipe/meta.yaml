@@ -28,9 +28,6 @@ requirements:
   host:
     - libva
     - intel-vaapi-driver
-  run:
-    - libva
-    - intel-vaapi-driver
 
 test:
   commands:

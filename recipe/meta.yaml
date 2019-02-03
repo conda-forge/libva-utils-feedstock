@@ -32,7 +32,7 @@ requirements:
 test:
   commands:
     # We can't actually run the bare vainfo command since it requires
-    # A disply which circleci doesn't have
+    # A display which circleci doesn't have
     - vainfo --help
 
 about:

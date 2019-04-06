@@ -27,6 +27,7 @@ requirements:
     - pkg-config
   host:
     - libva
+    - xorg-libx11
     - intel-vaapi-driver
 
 test:

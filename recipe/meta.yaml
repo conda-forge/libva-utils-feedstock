@@ -14,7 +14,8 @@ source:
   sha256: 13d15bf464e5a452f5243a6ca5988d3841c8bbbb017b75d73254acc0e4d6740c
   patches:
     # https://github.com/intel/libva-utils/issues/153
-    - skip_vendor_intel_sfcsample.patch
+    # https://github.com/intel/libva-utils/pull/152
+    - 152-skip_vendor_intel_sfcsample.patch
 
 build:
   skip: True  # [not linux]

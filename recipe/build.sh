@@ -4,6 +4,6 @@ set -ev
 CFLAGS="${CFLAGS} -std=c99 -lrt"
 CXXFLAGS="${CXXFLAGS} -lrt"
 
-./autogen.sh --prefix=$PREFIX
+./autogen.sh --prefix=$PREFIX --disable-x11
 make -j$(nproc) install
 set +ev

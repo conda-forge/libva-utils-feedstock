@@ -1,5 +1,5 @@
 {% set name = "libva-utils" %}
-{% set version = "2.3.0" %}
+{% set version = "2.4.0" %}
 
 # Follow instructions here
 # https://gist.github.com/Brainiarc7/eb45d2e22afec7534f4a117d15fe6d89
@@ -11,11 +11,15 @@ package:
 source:
   url: https://github.com/intel/{{ name }}/archive/{{ version }}.tar.gz
   fn: libva-utils-{{ version }}.tar.gz
-  sha256: f338497b867bbc9bf008e4892eaebda08955785dc7eb2005855bba5f1a20b037
+  sha256: 13d15bf464e5a452f5243a6ca5988d3841c8bbbb017b75d73254acc0e4d6740c
+  patches:
+    # https://github.com/intel/libva-utils/issues/153
+    # https://github.com/intel/libva-utils/pull/152
+    - 152-skip_vendor_intel_sfcsample.patch
 
 build:
   skip: True  # [not linux]
-  number: 1
+  number: 0
 
 requirements:
   build:
@@ -32,7 +36,7 @@ requirements:
 test:
   commands:
     # We can't actually run the bare vainfo command since it requires
-    # A disply which circleci doesn't have
+    # A display which circleci doesn't have
     - vainfo --help
 
 about:

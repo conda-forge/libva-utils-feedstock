@@ -12,6 +12,9 @@ source:
   url: https://github.com/intel/{{ name }}/archive/{{ version }}.tar.gz
   fn: libva-utils-{{ version }}.tar.gz
   sha256: 13d15bf464e5a452f5243a6ca5988d3841c8bbbb017b75d73254acc0e4d6740c
+  patches:
+    # https://github.com/intel/libva-utils/issues/153
+    - skip_vendor_intel_sfcsample.patch
 
 build:
   skip: True  # [not linux]
@@ -27,7 +30,6 @@ requirements:
     - pkg-config
   host:
     - libva
-    - xorg-libx11
     - intel-vaapi-driver
 
 test:

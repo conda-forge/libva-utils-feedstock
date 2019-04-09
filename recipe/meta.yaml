@@ -1,5 +1,5 @@
 {% set name = "libva-utils" %}
-{% set version = "2.4.0" %}
+{% set version = "2.4.1" %}
 
 # Follow instructions here
 # https://gist.github.com/Brainiarc7/eb45d2e22afec7534f4a117d15fe6d89
@@ -11,7 +11,7 @@ package:
 source:
   url: https://github.com/intel/{{ name }}/archive/{{ version }}.tar.gz
   fn: libva-utils-{{ version }}.tar.gz
-  sha256: 13d15bf464e5a452f5243a6ca5988d3841c8bbbb017b75d73254acc0e4d6740c
+  sha256: 4ab6faa6592ffe2d4817450f5453f3974b47441650e8f49e1a12497ce2a794ac
   patches:
     # https://github.com/intel/libva-utils/issues/153
     # https://github.com/intel/libva-utils/pull/152

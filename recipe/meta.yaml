@@ -15,7 +15,7 @@ source:
   patches:
     # https://github.com/intel/libva-utils/issues/153
     # https://github.com/intel/libva-utils/pull/152
-    - 152-skip_vendor_intel_sfcsample.patch
+    # - 152-skip_vendor_intel_sfcsample.patch
 
 build:
   skip: True  # [not linux]

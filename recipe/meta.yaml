@@ -12,10 +12,6 @@ source:
   url: https://github.com/intel/{{ name }}/archive/{{ version }}.tar.gz
   fn: libva-utils-{{ version }}.tar.gz
   sha256: d6c37257933731c7936775376388dfe6c9ebc460adff29f9ffe74cde2ebb3f52
-  patches:
-    # https://github.com/intel/libva-utils/issues/153
-    # https://github.com/intel/libva-utils/pull/152
-    # - 152-skip_vendor_intel_sfcsample.patch
 
 build:
   skip: True  # [not linux]

@@ -1,7 +1,7 @@
 # This file was generated automatically from conda-smithy. To update this configuration,
 # update the conda-forge.yml and/or the recipe/meta.yaml.
 # -*- mode: yaml -*-
- 
+
 jobs:
 - job: linux
   pool:
@@ -25,6 +25,7 @@ jobs:
 
   - script: |
         export CI=azure
+        export GIT_BRANCH=$BUILD_SOURCEBRANCHNAME
         .azure-pipelines/run_docker_build.sh
     displayName: Run docker build
     env:

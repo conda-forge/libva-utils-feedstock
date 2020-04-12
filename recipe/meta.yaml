@@ -1,5 +1,5 @@
 {% set name = "libva-utils" %}
-{% set version = "2.5.0" %}
+{% set version = "2.7.0" %}
 
 # Follow instructions here
 # https://gist.github.com/Brainiarc7/eb45d2e22afec7534f4a117d15fe6d89
@@ -11,10 +11,10 @@ package:
 source:
   url: https://github.com/intel/{{ name }}/archive/{{ version }}.tar.gz
   fn: libva-utils-{{ version }}.tar.gz
-  sha256: d6c37257933731c7936775376388dfe6c9ebc460adff29f9ffe74cde2ebb3f52
+  sha256: bcb0d4c0efadf9600dd5064ee8e2e08e8d1bc7307e829e39d0f8206016a3fda2
 
 build:
-  skip: True  # [not linux]
+  skip: true  # [not linux]
   number: 0
 
 requirements:
@@ -40,7 +40,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: COPYING
-  summary: 'Libva is an implementation for VA-API (Video Acceleration API)'
+  summary: Libva is an implementation for VA-API (Video Acceleration API)
   description: |
     libva-utils is a collection of utilities and examples to exercise VA-API in
     accordance with the libva project. --enable-tests (default = no) provides a

@@ -1,5 +1,7 @@
 {% set name = "libva-utils" %}
 {% set version = "2.7.0" %}
+{% set version_split = version.split('.') %}
+{% set version_pin = version_split[0] + '.' + version_split[1] %}
 
 # Follow instructions here
 # https://gist.github.com/Brainiarc7/eb45d2e22afec7534f4a117d15fe6d89
@@ -26,7 +28,7 @@ requirements:
     - libtool
     - pkg-config
   host:
-    - libva
+    - libva {{ version_pin }}
     - intel-vaapi-driver
 
 test:

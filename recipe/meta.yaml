@@ -3,7 +3,6 @@
 
 # Follow instructions here
 # https://gist.github.com/Brainiarc7/eb45d2e22afec7534f4a117d15fe6d89
-
 package:
   name: {{ name|lower }}
   version: {{ version }}

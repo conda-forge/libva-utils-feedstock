@@ -25,7 +25,7 @@ requirements:
     - libtool
     - pkg-config
   host:
-    - libva
+    - libva  {{ version }}
     - intel-vaapi-driver
 
 test:

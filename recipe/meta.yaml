@@ -25,7 +25,7 @@ requirements:
     - libtool
     - pkg-config
   host:
-    - libva  {{ version }}
+    - libva {{ version }}
     - intel-vaapi-driver
 
 test:
@@ -35,7 +35,7 @@ test:
     - vainfo --help
 
 about:
-  home: https://github.com/intel/libva
+  home: https://github.com/intel/libva-utils/
   license: MIT
   license_family: MIT
   license_file: COPYING

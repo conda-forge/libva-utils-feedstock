@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/intel/{{ name }}/archive/{{ version }}.tar.gz
-  fn: libva-utils-{{ version }}.tar.gz
+  # fn: libva-utils-{{ version }}.tar.gz
   sha256: 9cf35b971001e7143dda14207b6891c12619a72a2ab99a9133b3da5b9c4d97dd
 
 build:

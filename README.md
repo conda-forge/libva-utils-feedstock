@@ -1,7 +1,7 @@
 About libva-utils
 =================
 
-Home: https://github.com/intel/libva
+Home: https://github.com/intel/libva-utils/
 
 Package license: MIT
 

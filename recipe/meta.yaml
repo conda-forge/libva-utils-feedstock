@@ -23,6 +23,7 @@ requirements:
     - automake
     - libtool
     - pkg-config
+    - make        # [unix]
   host:
     - libva {{ major_minor_version }}
     - intel-vaapi-driver

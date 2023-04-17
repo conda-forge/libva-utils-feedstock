@@ -1,5 +1,5 @@
 {% set name = "libva-utils" %}
-{% set version = "2.18.1" %}
+{% set version = "2.18.2" %}
 {% set major_minor_version = ".".join(version.split('.')[:2]) %}
 
 # https://gist.github.com/Brainiarc7/eb45d2e22afec7534f4a117d15fe6d89
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/intel/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 79da4a683dc4b10639edd7ad4c9434789ef208f5361f87aca9bc986a4ebcb155
+  sha256: c4c0555c96ca678f9ac47fbb56f0ae56ca39fd50fe3553bae5cb13117bfcb406
 
 build:
   skip: true  # [not linux]

@@ -13,10 +13,11 @@ source:
 
 build:
   skip: true  # [not linux]
-  number: 0
+  number: 1
 
 requirements:
   build:
+    - {{ stdlib('c') }}
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - autoconf
@@ -25,8 +26,9 @@ requirements:
     - pkg-config
     - make        # [unix]
   host:
+    - libdrm
     - libva {{ major_minor_version }}
-    - intel-vaapi-driver
+    - intel-vaapi-driver  # [linux64]
 
 test:
   commands:
@@ -49,3 +51,4 @@ about:
 extra:
   recipe-maintainers:
     - hmaarrfk
+    - ehfd

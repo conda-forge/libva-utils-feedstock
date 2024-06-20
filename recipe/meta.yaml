@@ -26,6 +26,7 @@ requirements:
     - pkg-config
     - make        # [unix]
   host:
+    - wayland
     - libdrm
     - libva {{ major_minor_version }}
     - intel-vaapi-driver  # [linux64]

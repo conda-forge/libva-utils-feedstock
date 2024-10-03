@@ -18,7 +18,6 @@ requirements:
   build:
     - {{ stdlib('c') }}
     - {{ compiler('c') }}
-    - {{ stdlib('cxx') }}
     - {{ compiler('cxx') }}
     - pkg-config
     - meson

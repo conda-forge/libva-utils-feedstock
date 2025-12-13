@@ -1,5 +1,5 @@
 {% set name = "libva-utils" %}
-{% set version = "2.22.0" %}
+{% set version = "2.23.0" %}
 {% set major_minor_version = ".".join(version.split('.')[:2]) %}
 
 package:
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://github.com/intel/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 7b57615c130427ec134bb5d2b80af516ce5bb19a40e89b1dab46a0d59760d96c
+  sha256: fa7ff29847b55010fbbb775b35382f97f29b7b97abe9a2f6fb3e22b36db5440a
 
 build:
   # Windows build can be enabled if DirectX Headers are available
   skip: true  # [not linux]
-  number: 1
+  number: 0
 
 requirements:
   build:
